@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Egg</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="container">
+    <h1>Project Egg</h1>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <label for="inputRow" class="form-label">Numero De Filas</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputRow"
+          value="9"
+          disabled
+        />
+      </div>
+      <div class="col-md-4">
+        <label for="inputLetter" class="form-label">Ordenar por la letra</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputLetter"
+          value="r"
+          disabled
+        />
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <label for="inputWord" class="form-label">Palabras a agregar</label>
+        <input type="text" class="form-control" id="inputWord" />
+
+        <div class="col-md-4" id="wordsContainer"></div>
+      </div>
+      <div class="col-md-4">
+        <div class="col-md-12 mt-4">
+          <button type="submit" class="btn btn-primary mt-2" id="buttonWord">
+            Agregar
+          </button>
+          <button type="submit" class="btn btn-info mt-2" id="buttonOrder">
+            Ordenar palabras
+          </button>
+          <button type="submit" class="btn btn-danger mt-2" id="buttonClear">
+            Reiniciar
+          </button>
+        </div>
+        <div class="col-md-12 mt-4" id="matrizContainer">
+          <table
+            class="table table-bordered border-primary"
+            id="matrizTable"
+          ></table>
+        </div>
+      </div>
+      <div class="col-12"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
